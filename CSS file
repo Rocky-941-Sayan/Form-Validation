@@ -1,0 +1,76 @@
+/* Default types */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Background designning */
+body{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/975/421/110/windows-10-black-dark-hd-wallpaper-preview.jpg");
+    background-size: contain;
+    height:100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+/* Div designning or Form designning */
+.container{
+    background-color: #8080806b;
+    margin-left: 300px;
+    margin-top: 100px;
+    padding: 30px;
+    width: fit-content;
+    border-radius: 25px;
+    align-items: center;
+}
+/* Form head designning */
+.heading{
+    background-color: #181C14;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(250, 132, 53);
+}
+/* Input fields designning */
+input{
+    background-color: #fff4eaa9;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    border:none;
+    outline:none;
+    color: rgb(0, 0, 134);
+    font-size: 20px;
+    cursor:pointer;
+}
+input::placeholder{
+    color:rgb(79, 79, 255);
+    
+}
+/* After clicking on input fields designning */
+input:focus{
+    background-color: #ffa654b6;
+}
+/* Submit button designning */
+button{
+    background-image: url(https://api.videobolt.net/v2/assets/33123476/img?screenType=none&noRedirect=true&key=bcvwsazona);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color:bisque;
+    cursor: pointer;
+}
+button:hover{
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 15px 22px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+/* Error designning */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
