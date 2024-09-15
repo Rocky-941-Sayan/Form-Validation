@@ -1,0 +1,47 @@
+function validation(){
+    // Getting user inputs
+    let username = document.getElementById("username").value;
+    let email = document.getElementById("email").value;
+    let mob_number = document.getElementById("mobile").value;
+    let password = document.getElementById("password").value;
+    let cnf_password = document.getElementById("confirmPassword").value;
+
+    let errors = [];
+
+    // Check if username length is not 5
+    if (username.length < 5) {
+        errors.push("Name must be at least 5 characters.");
+    }
+
+    // Check if email contains '@'
+    if (!email.includes("@")) {
+        errors.push("Email ID should have '@' character in it.");
+    }
+
+    // Check if mobile number is 10 digits and not '123456789'
+    if (mob_number.length !== 10 || mob_number === '123456789') {
+        errors.push("Phone number should be a 10-digit number and should not be '123456789'.");
+    }
+
+    // Check if password meets the criteria
+    if (password === 'password' || password === username || password.length < 8) {
+        errors.push("Password can't be 'password', the same as the username, or less than 8 characters.");
+    }
+
+    // Check if password and confirm password match
+    if (password !== cnf_password) {
+        errors.push("Password and confirm password should match.");
+    }
+
+    // Display errors or submit form if no errors
+    if (errors.length > 0) {
+        alert(errors.join("\n"));
+    } else {
+        // Form is valid, you can submit it here or handle it as needed
+        alert("Form submitted successfully!");
+        // You might want to handle form submission here
+    }
+}
+
+// Attach validation function to the form's submit event
+document.querySelector("form").addEventListener("submit", validation);
